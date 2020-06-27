@@ -1,4 +1,5 @@
 import React from 'react';
+import TodoList from './components/TodoList';
 
 // function App() {
 //   return (
@@ -8,8 +9,10 @@ import React from 'react';
 // }
 
 const App: React.FC = () => {
+  const  todos = [{id: '1', text: 'typescript'}]
   return (
     <div className="App">
+      <TodoList todos={ todos } />
     </div>
   );
 }
